@@ -1,0 +1,82 @@
+/* universal */
+/*  *
+{margin-top: 0;
+  margin-bottom: 0;
+} */
+/* Elements */
+body {
+  margin: 0;
+  /* background-image: url("assets/restaurantgb.jpg"); */
+  width: 100vw;
+}
+main {
+  background-color: rgb(123, 94, 78);
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Classes */
+.footer {
+  margin-top: 0;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+}
+.sides {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  h2 {
+    width: 100vw;
+    text-align: left;
+    font-size: 3vw;
+    padding: 2vw;
+    text-indent: vw;
+  }
+}
+.sides-col {
+  width: 60vw;
+  display: flex;
+  /* flex-direction: column; */
+  & h3 {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+  }
+  ul {
+    list-style-type: none;
+    font-size: 1.5vw;
+    line-height: 3vh;
+    padding: 0 5vw;
+    text-indent: 0;
+  }
+  li {
+    margin-bottom: 2vw;
+  }
+  & li p {
+    width: 50vw;
+  }
+  &li span {
+    padding-left: 7vw;
+  }
+}
+.sides-img {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img {
+    width: 100%;
+  }
+}
+/*IDs */
+#head {
+  text-align: center;
+  padding: 5vw;
+  font-size: 7vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#menu {
+  width: 100vw;
+}

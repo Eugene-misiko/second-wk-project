@@ -1,0 +1,133 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+body {
+  margin: 0;
+  /* background-color: rgb(223, 212, 206); */
+}
+/* elements */
+header {
+  margin: 0;
+}
+footer {
+  margin: 0;
+  background-color: #533223;
+}
+/* classes */
+.sticky-nav {
+  top: 0;
+  position: sticky;
+}
+.bar {
+  background-color: rgb(83, 50, 35);
+  margin: 0;
+  word-spacing: 4vw;
+  padding: 1.7vw;
+  & li {
+    display: inline-block;
+
+    & a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 1.7vw;
+    }
+  }
+}
+.row {
+  /* After playing around with flexbox, I found it easier to manage layout this way rather than use grid since it wasn't as responsive on smaller screens*/
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 500px;
+  grid-template-areas: "Text Text img"; */
+  background-color: rgb(223, 212, 206);
+}
+.headtext {
+  /* grid-area: Text; */
+  padding: 5vw;
+  margin-top: 5vw;
+  width: 54.8vw;
+  color: rgb(83, 50, 35);
+  font-style: italic;
+  & h1 {
+    font-size: 7vw;
+  }
+  & h2 {
+    font-size: 3vw;
+  }
+}
+.headimg {
+  /* grid-area: img; */
+  & img {
+    height: clamp(200px, 35.2vw, 800px);
+    border-radius: 10px;
+  }
+}
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.col img {
+  width: 50vw;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(83, 50, 35);
+  color: white;
+  padding: 1vw;
+  margin-top: 2vw;
+  font-size: 1.2vw;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+  /* padding-bottom: 0; */
+}
+.footer-col ul {
+  list-style-type: none;
+  line-height: 5vh;
+  width: 22.5vw;
+  padding: 0;
+}
+.footer-bottom ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 3vw;
+  gap: 2vw;
+  padding: 0 5vw ;
+}
+/* ids */
+#nav-logo {
+  font-size: 2.3vw;
+  padding-left: 2vw;
+  word-spacing: 0.1vw;
+}
+#about-section {
+  width: 100vw;
+  & #about {
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    & img {
+      width: clamp(200px, 30vw, 5000px);
+      border-radius: 50%;
+      border: 1px solid black;
+      margin-left: 2vw;
+      float: inline-end;
+    }
+    & p {
+      font-size: clamp(12px, 2vw, 24px);
+      color: rgb(83, 50, 35);
+      text-align: center;
+      width: clamp(200px, 40vw, 1000px);
+      padding-top: 5vw;
+    }
+  }
+}

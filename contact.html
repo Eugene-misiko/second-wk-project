@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Deliciuos Restaurant</title>
+     <link rel="icon" type="image/x-icon" href="assets/B!.jpg">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+     <script
+      src="https://kit.fontawesome.com/27013879fb.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <nav class="sticky-nav">
+      <ul class="bar">
+        <li>
+          <a href="index.html" id="nav-logo"
+            ><i class="fa-solid fa-bowl-food"></i> Delicious</a
+          >
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+       <div class="heading">
+            <h1>CONTACT US</h1>
+            
+        </div>
+      <div class="body">
+        <p>
+          You can reach us via phone at +254 712345678 or <br>email us at contact@deliciousrestaurant.com
+        </p>
+        <p>
+          Our Kiambu location is open from 1 AM to 11 PM, Monday to Saturday. <br> Our Wizkid outlet operates from 7.30PM to 10.30PM,Monday to Saturday.
+        </p>
+        <h2>Book a Table</h2>
+        <h3>You can also make an inquery</h3>
+        <form action="mailto:eugenemisiko438@gmail.com" method="post" id="contact-form">
+          <fieldset class="fieldset">
+            <legend>Contact Us</legend>
+            <label for="fname">First Name</label>
+            <br>
+                      <input
+            type="text"
+            name="firtsname"
+            id="firstname"
+            required
+            pattern="[A-Za-z]{3,}"
+            title="Please enter your First name"
+          />
+          <br>
+            <label for="sname">Surname</label>
+            <br>
+                      <input
+            type="text"
+            name="firtsname"
+            id="firstname"
+            required
+            pattern="[A-Za-z]{3,}"
+            title="Please enter your surname"
+          />
+          <br>
+                    <label for="email">Email</label>
+                    <br>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            title="Please enter a valid email"
+            autocomplete="on"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+          <br>
+                    <label for="tek">Phone number</label>
+                    <br>
+          <input
+            type="text"
+            name="tel"
+            id="tel"
+            required
+            title="Please enter a valid phone number"
+            autocomplete="on"
+            pattern="[0-9+]{7,15}"
+          />
+          <br>
+          <!-- <label for="txt"></label> -->
+          <br />
+          <textarea name="Interests" id="Interests" style="width: 300px; height: 200px;"> Type a brief message so that our tem will reach out immediately
+        </textarea
+          >
+          <br />
+          <input class="btn" type="submit" value="Submit" />
+          </fieldset>
+
+        </form>
+            <span id="location">
+                <h3>Delicious Restaurant</h3> <br>
+Wizkid Mall, Nairobi, Kenya
+                <br><br>
+ <h3>Delicious-Kiambu</h3><br>
+Kiambu Road, Wizkid Mall, Nairobi, Kenya
+            </span>
+        </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-item">
+            <h3>Favourites</h3>       
+             <!-- Favourites -->
+          <nav class="footer-col">
+            <ul>
+              <li>Coupons</li>
+              <li>Special Offers</li>
+              <li>Loyalty Rewards</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-item">
+            <h3>Customer Support</h3>
+            <!-- Customer support -->
+          <nav class="footer-col">
+            <ul>        
+              <li>Health</li>
+              <li>Allergen information</li>
+              <li>T&Cs</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-item">
+            <h3>Orders</h3>
+            <!-- Orders -->
+          <nav class="footer-col">
+            <ul>
+              <li>Online Orders</li>
+              <li>Delivery Service</li>
+              <li>Location</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+            <!-- Socials -->
+            <ul>
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+            </ul>
+        </div>
+      </div>
+        <!-- socials -->
+        <!-- back to top -->
+    </footer>
+    
+</body>
+</html>
